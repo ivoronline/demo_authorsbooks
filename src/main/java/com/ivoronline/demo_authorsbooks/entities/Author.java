@@ -1,5 +1,6 @@
 package com.ivoronline.demo_authorsbooks.entities;
 
+import com.ivoronline.demo_authorsbooks.entities.security.Account;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 import javax.persistence.CascadeType;

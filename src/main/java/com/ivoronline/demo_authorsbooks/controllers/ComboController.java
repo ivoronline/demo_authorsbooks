@@ -33,8 +33,8 @@ public class ComboController {
   public String getBooks(@RequestParam Integer authorId) {
 
     //CREATE AUTHOR
-    Author author = new Author();
-    author.setId(authorId);
+    Author  author = new Author();
+            author.setId(authorId);
 
     //CALL SERVICE (BUSINESS LOGIC)
     String result = comboService.getBooks(author);

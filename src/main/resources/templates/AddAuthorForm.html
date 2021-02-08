@@ -2,14 +2,24 @@
 
 <style type="text/css">
     div { display:flex; flex-direction:column; align-items:center; border: solid 1pt; margin: 10pt 50pt; background-color: aliceblue }
+    h3  { font-family: Helvetica; color:#888888 }
 </style>
 
 <div>
   <h2> ADD AUTHOR </h2>
   <form method="get" action="AddAuthor">
+
+    <h3> Personal info:</h3>
     <p> <input type="text"   name="name"      placeholder="Enter Author Name"      /> </p>
     <p> <input type="text"   name="age"       placeholder="Enter Author Age"       /> </p>
     <p> <input type="text"   name="birthday"  placeholder="Enter Author Birthday"  /> </p>
-    <p> <input type="submit" name="addAuthor" value="Add Author" style="width:100%"/> </p>
+
+    <h3> Account info:</h3>
+    <p> <input type="text"   name="username"  placeholder="Enter Account Username" /> </p>
+    <p> <input type="text"   name="password"  placeholder="Enter Account Password" /> </p>
+    <p> <input type="text"   name="profile"   placeholder="Enter Account Profile"  /> </p>
+
+    <p> <input type="submit" name="addAuthor" value="Add Author" style="width:100%"       /> </p>
+
   </form>
 </div>
