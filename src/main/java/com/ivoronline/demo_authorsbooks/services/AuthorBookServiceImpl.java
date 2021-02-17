@@ -22,7 +22,7 @@ public class AuthorBookServiceImpl implements AuthorBookServiceInterface {
     ModelMapper modelMapper = new ModelMapper();
                 modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
-    //CONVERT DTOs TO ENTITIES
+    //CONVERT DTOs TO ENTITIESs
     Book   book   = modelMapper.map(authorBookDTO, Book  .class);
     Author author = modelMapper.map(authorBookDTO, Author.class);
            author.getBooks().add(book);
