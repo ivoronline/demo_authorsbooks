@@ -1,0 +1,14 @@
+[Unit]
+Description           = Spring Boot Application: Test Jenkins 2
+After                 = network.target
+StartLimitInterval = 0
+
+[Service]
+ExecStart             = /bin/java -jar /var/lib/jenkins/.m2/repository/com/ivoronline/demo_authorsbooks/0.0.1-SNAPSHOT/demo_authorsbooks-0.0.1-SNAPSHOT.jar
+User                  = jenkins
+Type                  = simple
+Restart               = always
+RestartSec            = 1
+
+[Install]
+WantedBy              = multi-user.target
